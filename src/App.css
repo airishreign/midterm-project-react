@@ -1,38 +1,45 @@
-.App {
-  text-align: center;
+/* App.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  overflow: hidden; /* Prevent scrolling */
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* Light text color */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./path/to/your/background-image.jpg'); /* Update with your image path */
+  background-size: cover; /* Cover entire screen */
+  background-position: center; /* Center the image */
+  z-index: -1; /* Send background to back */
+  animation: animateBackground 30s infinite alternate; /* Adjust duration as needed */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.navbar {
+  background-color: #1e1e1e; /* Darker navbar background */
+  color: #ffffff; /* Light navbar text */
+}
+
+.navbar a {
+  color: #ffffff; /* Light text color for links */
+}
+
+.navbar a:hover {
+  color: #bb86fc; /* Light purple hover effect */
+}
+
+@keyframes animateBackground {
+  0% {
+      opacity: 0.7; /* Adjust initial opacity */
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  100% {
+      opacity: 1; /* Adjust final opacity */
   }
 }

@@ -1,0 +1,31 @@
+.navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #007bff; /* Original blue color */
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.navbar-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.navbar-list li {
+    color: white; /* Original text color */
+    font-size: 24px; /* Size of the icons */
+}
+
+.navbar-list li a {
+    color: white; /* Original link color */
+    text-decoration: none;
+}
+
+.navbar-list li a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}

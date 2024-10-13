@@ -1,0 +1,59 @@
+.update-item-container {
+  background-color: #d2e0ea; /* Light background */
+  color: #333333; /* Dark text */
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.update-item-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.update-item-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.update-item-container input,
+.update-item-container select {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #007bff; /* Blue border */
+  border-radius: 4px;
+  background-color: #ffffff; /* White background */
+  color: #333333; /* Dark text */
+  font-size: 16px; /* Increased font size for better readability */
+}
+
+.update-item-container button {
+  padding: 10px;
+  background-color: #007bff; /* Blue background */
+  color: #ffffff; /* White text */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px; /* Increased font size for better readability */
+  transition: background-color 0.3s;
+}
+
+.update-item-container button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Default message styling */
+.update-message {
+  margin-top: 20px;
+  text-align: center;
+  color: #007bff; /* Blue text for success message */
+}
+
+/* Error message styling */
+.update-message.error {
+  color: red; /* Red text for error */
+  text-align: center; /* Center align the text */
+  margin-top: 1px; /* 1px margin from the input box */
+}
